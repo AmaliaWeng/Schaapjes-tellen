@@ -94,7 +94,7 @@ p.aantal {
   transform: translateX(-50%);
   width: 150px;
   height: auto;
-  margin-right: 1rem;
+  
 }
 
 .sheep5,
@@ -106,7 +106,7 @@ p.aantal {
   transform: translateX(-50%);
   width: 220px;
   height: auto;
-  margin-left: 1rem;
+  
 }
 
 .Btn_suprise #SupriseBtn {
@@ -341,3 +341,4 @@ body.sleep {
     width: 300px;
   }
 }
+
