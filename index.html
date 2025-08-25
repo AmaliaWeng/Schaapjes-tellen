@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="CSS/animation.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <title>Sleep</title>
+</head>
+
+<body>
+    <section id="startscreen" class="start visible">
+        <div class=" start_titel">
+            <h1>Kan je niet in slaap vallen?</h1>
+        </div>
+        <p class="tekst">Tel schaapjes en val zo in slaap.</p>
+
+        <div class="Btn_start">
+            <button id="StartBtn">START</button></div>
+        <div class="grass"></div>
+    </section>
+
+    <Section id="game" class="game hidden">
+
+        <div class="cloud1"> <img src="assets/images/clouds_5401915 1.png" alt="cloud"></div>
+        <div class="cloud2"><img src="assets/images/clouds_5401915 2.png" alt="cloud"></div>
+        <div class="cloud3"> <img src="assets/images/clouds_5401915 1.png" alt="cloud3"></div>
+
+        <div class="moon"><img src="assets/images/maan.png" alt="maan"></div>
+        <div class="stars"><img src="assets/images/Sterren.png" alt="Sterren"></div>
+
+
+        <h1 class="titel">Schaapjes tellen</h1>
+
+        <p class="tekst2">Hoe meer schaapjes je telt hoe dichter je komt tot dromen land!</p>
+
+        <div class="birds">
+            <div class="bird-container">
+                <div class="bird"><img src="assets/images/seagull_4884784.png" alt=""></div>
+            </div>
+            <div class="bird2-container">
+                <div class="bird2"><img src="assets/images/seagull_2.png" alt=""></div>
+            </div>
+        </div>
+
+        <audio id="nightsound" src="assets/audio/night-atmosphere-with-crickets-374652.mp3" preload="auto"> </audio>
+        <audio id="background_music" src="assets/audio/birdfish-happy-loop-6199.mp3" loop> </audio>
+        <audio id="party" src="assets/audio/disco-77101.mp3" preload="auto"> </audio>
+        <audio id="sheepAudio" src="assets/audio/sheep-352668.mp3" preload="auto"></audio>
+        <audio id="sheepAudio2" src="assets/audio/sheep-3-89230.mp3" preload="auto"></audio>
+        <audio id="sheepAudio3" src="assets/audio/small-sheep-352868.mp3" preload="auto"></audio>
+        <audio id="birdAudio1" src="assets/audio/bird-sound-1.mp3" preload="auto"></audio>
+        <audio id="birdAudio2" src="assets/audio/bird-sound-2.mp3" preload="auto"></audio>
+
+
+        <img class="sheep" src="assets/images/sheep_2711851 1.png" alt="sheep" id="sheep"></div>
+        <img class="sheep2" src="assets/images/sheep_2.png" alt="sheep" id="sheep2">
+        <img class="sheep3" src="assets/images/sheep_3.png" alt="sheep" id="sheep3">
+        <img class="sheep4" src="assets/images/sheepNight_3.png" alt="sheep" id="sheep4">
+        <img class="sheep5" src="assets/images/sheep_4.png" alt="sheep" id="sheep5">
+        <img class="sheep6" src="assets/images/sheepNight_4.png" alt="sheep" id="sheep6">
+
+        <p class="aantal">Aantal schaapjes geteld: <span id="counter">0</span></p>
+        </div>
+
+        <div class="grass">
+            <div class="Btn_spring">
+                <button id="SpringBtn">Spring</button></div>
+            <div class="Btn_suprise">
+                <button id="SupriseBtn">Suprise!</button></div>
+        </div>
+
+    </Section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

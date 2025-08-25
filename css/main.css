@@ -1,0 +1,343 @@
+/* main */
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #b3e5fc;
+  color: #332e2e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  transition: background-color 1s ease, color 1s ease;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 64px;
+  text-align: center;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 10;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 10;
+  font-weight: 600;
+}
+
+button {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #ffeb9f;
+  border: 3px solid #332e2e;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 1rem;
+  z-index: 10;
+}
+
+/* game */
+
+p.aantal {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.grass {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #537d5a;
+  border-top: 3px solid #255133;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.sheep,
+.sheep2 {
+  position: fixed;
+  bottom: 195px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
+}
+
+.sheep3,
+.sheep4 {
+  display: none;
+  position: fixed;
+  bottom: 195px;
+  left: 75%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.sheep5,
+.sheep6 {
+  display: none;
+  position: fixed;
+  bottom: 195px;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.Btn_suprise #SupriseBtn {
+  display: none;
+  transition: opacity 1s ease;
+  background-color: pink;
+}
+.cloud1 {
+  position: absolute;
+  top: 20px;
+  margin-left: 1rem;
+  width: 250px;
+  height: auto;
+}
+.cloud2 {
+  position: absolute;
+  top: 100px;
+  left: 90%;
+  width: 200px;
+  height: auto;
+}
+.cloud3 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 280px;
+  height: auto;
+}
+.moon {
+  position: absolute;
+  top: 20px;
+  margin-left: 1rem;
+  width: 250px;
+  height: auto;
+}
+
+.stars {
+  position: absolute;
+  top: 100px;
+  left: 86%;
+  width: 200px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.bird {
+  position: absolute;
+  top: -60px;
+  margin-left: 1rem;
+  width: 100px;
+  height: auto;
+}
+
+.bird2 {
+  position: absolute;
+  top: 10px;
+  left: 86%;
+  width: 70px;
+  height: auto;
+  margin-right: 1rem;
+}
+.birds {
+  display: none;
+}
+
+/* start scherm */
+
+.Btn_start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+/* eind scherm */
+
+.moon_sleep {
+  position: absolute;
+  top: 20px;
+  margin-left: 1rem;
+  width: 250px;
+  height: auto;
+}
+
+.stars_sleep {
+  position: absolute;
+  top: 100px;
+  left: 86%;
+  width: 200px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+body.sleep {
+  background-color: #05446c;
+  color: white;
+}
+
+.grass_sleep {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #537d5a;
+  border-top: 3px solid #255133;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.Sleeping_sheep {
+  position: fixed;
+  margin-top: 1rem;
+  bottom: 12px;
+  left: 50%;
+  width: 450px;
+  height: auto;
+  z-index: 10;
+}
+
+.again {
+  position: fixed;
+  bottom: 12px;
+  left: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: auto;
+  z-index: 10;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+  /* Main */
+
+  h1 {
+    font-size: 44px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  p.aantal {
+    font-size: 24px;
+
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Main */
+
+  h1 {
+    font-size: 33px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  p.aantal {
+    font-size: 15px;
+
+    margin-top: 1rem;
+  }
+
+  /* sheep */
+
+  .sheep,
+  .sheep2 {
+    width: 150px;
+  }
+
+  .sheep3,
+  .sheep4 {
+    width: 100px;
+  }
+
+  .sheep5,
+  .sheep6 {
+    width: 170px;
+  }
+
+  /* background */
+
+  .bird {
+    top: -30px;
+    width: 40px;
+  }
+
+  .bird2 {
+    top: 10px;
+    width: 30px;
+  }
+
+  .cloud1 {
+    width: 200px;
+  }
+  .cloud2 {
+    width: 150px;
+  }
+  .cloud3 {
+    width: 100px;
+  }
+  .moon {
+    width: 200px;
+  }
+
+  .stars {
+    width: 100px;
+  }
+
+  /* background eindscherm */
+
+  .moon_sleep {
+    width: 200px;
+  }
+
+  .stars_sleep {
+    width: 100px;
+  }
+
+  .Sleeping_sheep {
+    width: 300px;
+  }
+}

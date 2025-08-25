@@ -1,0 +1,216 @@
+/* fadout transition */
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease, background-color 2s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+/* spring animatie */
+
+@keyframes jump {
+  0%,
+  100% {
+    bottom: 195px;
+  }
+  50% {
+    bottom: 250px;
+  }
+}
+
+.jump {
+  animation: jump 0.6s ease-in-out;
+}
+.jump2 {
+  animation: jump 0.8s ease-in-out;
+}
+.jump3 {
+  animation: jump 0.4s ease-in-out;
+}
+
+/* visibility en fades */
+
+.cloud1,
+.cloud2,
+.cloud3,
+.moon,
+.stars {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 1;
+}
+
+.moon,
+.stars,
+.sheep2,
+.sheep4 .sheep6 {
+  opacity: 0;
+}
+.sheep,
+.sheep2,
+.sheep3,
+.sheep4,
+.sheep5,
+.sheep6 {
+  transition: opacity 0.5s ease;
+}
+
+/* bewegende achtergrond */
+
+@keyframes move {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+.cloud1,
+.cloud2,
+.cloud3 {
+  animation: move 40s linear infinite;
+}
+
+.bird-container {
+  animation: move 4s linear infinite;
+}
+
+/* op en neer background */
+
+@keyframes updown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.bird {
+  animation: updown 2s ease-in-out infinite;
+}
+
+@keyframes updown2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.bird2 {
+  animation: updown2 2s ease-in-out infinite;
+}
+
+@keyframes updown3 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.moon,
+.stars,
+.moon_sleep,
+.stars_sleep {
+  animation: updown3 3s ease-in-out infinite;
+}
+
+@keyframes move2 {
+  from {
+    transform: translateX(120vw);
+  }
+  to {
+    transform: translateX(-1500px);
+  }
+}
+
+.bird2-container {
+  animation: move2 4s linear infinite;
+}
+
+/* wiggle animatie */
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: translateX(-50%) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(2deg);
+  }
+}
+@keyframes wiggle2 {
+  0%,
+  100% {
+    transform: translateX(-50%) rotate(-0.5deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(0.5deg);
+  }
+}
+
+.wiggle {
+  animation: wiggle 0.5s infinite;
+}
+
+.Sleeping_sheep {
+  animation: wiggle2 2s infinite;
+}
+
+/* button effect */
+
+.grow {
+  transform: scale(1.1);
+}
+
+/*party animatie*/
+
+@keyframes disco {
+  0% {
+    background-color: red;
+  }
+  14% {
+    background-color: orange;
+  }
+  28% {
+    background-color: yellow;
+  }
+  42% {
+    background-color: green;
+  }
+  56% {
+    background-color: blue;
+  }
+  70% {
+    background-color: indigo;
+  }
+  84% {
+    background-color: violet;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.disco {
+  animation: disco 4s linear infinite;
+}
+
+/*glow animatie*/
+
+.glow {
+  transition: 0.8s ease;
+}
+
+.glow {
+  filter: drop-shadow(0 0 15px rgb(243, 243, 145));
+}
